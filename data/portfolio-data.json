@@ -1,0 +1,124 @@
+{
+  "personal": {
+    "name": "Amir Hamza Ridoy",
+    "titles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Frontend Developer",
+      "Software Development Engineer"
+    ],
+    "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/amir-hamza-447ba8278/",
+      "github": "https://github.com/amirhamza24",
+      "facebook": "http://facebook.com/amirhamza.ridoy/4",
+      "email": "ridoy.amirhamza@gmail.com"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a passionate and dedicated Software Development Engineer with extensive experience in full-stack web development. My expertise spans across modern frontend frameworks like React.js and Next.js, as well as robust backend technologies including Node.js and Express.js. I thrive on creating elegant, user-centric solutions that solve real-world problems. With a strong foundation in computer science and a proven track record at Fusion Infotech Ltd., I continuously strive to push the boundaries of what's possible in web development. My journey from an intern to a Software Development Engineer has equipped me with both technical prowess and the ability to collaborate effectively in dynamic team environments."
+  },
+  "skills": [
+    { "name": "C", "percentage": 80, "category": "programming" },
+    { "name": "C++", "percentage": 70, "category": "programming" },
+    { "name": "Java", "percentage": 30, "category": "programming" },
+    { "name": "Python", "percentage": 40, "category": "programming" },
+    { "name": "HTML", "percentage": 95, "category": "frontend" },
+    { "name": "CSS", "percentage": 95, "category": "frontend" },
+    { "name": "Bootstrap", "percentage": 95, "category": "frontend" },
+    { "name": "Tailwind", "percentage": 95, "category": "frontend" },
+    { "name": "Javascript", "percentage": 85, "category": "frontend" },
+    { "name": "Typescript", "percentage": 80, "category": "frontend" },
+    { "name": "React JS", "percentage": 95, "category": "frontend" },
+    { "name": "Next JS", "percentage": 80, "category": "frontend" },
+    { "name": "Node.js", "percentage": 70, "category": "backend" },
+    { "name": "Express.js", "percentage": 80, "category": "backend" },
+    { "name": "NoSQL", "percentage": 70, "category": "database" },
+    { "name": "MySQL", "percentage": 70, "category": "database" },
+    { "name": "PostgreSQL", "percentage": 60, "category": "database" },
+    { "name": "Prisma", "percentage": 60, "category": "database" }
+  ],
+  "experience": [
+    {
+      "period": "July 2025 - Present",
+      "position": "Software Development Engineer",
+      "company": "Fusion Infotech Ltd.",
+      "current": true
+    },
+    {
+      "period": "July 2024 - June 2025",
+      "position": "Junior Frontend Developer",
+      "company": "Fusion Infotech Ltd.",
+      "current": false
+    },
+    {
+      "period": "November 2023 - June 2024",
+      "position": "Frontend Developer Intern",
+      "company": "Fusion Infotech Ltd.",
+      "current": false
+    }
+  ],
+  "education": [
+    {
+      "period": "2019-2022",
+      "institution": "Stamford University Bangladesh",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science and Engineering",
+      "gpa": "3.60 out of 4.00",
+      "research": "Author's Gender Prediction Based on Their Bangla Books (using NLP)"
+    },
+    {
+      "period": "2016-2018",
+      "institution": "Govt. Shahid Bulbul College, Pabna",
+      "degree": "Higher Secondary Certificate (HSC)",
+      "field": "",
+      "gpa": "3.69 out of 5.00",
+      "research": "No"
+    },
+    {
+      "period": "2011-2016",
+      "institution": "Nondonpur K.T.S. Ayesha Khatun High School, Santhia, Pabna",
+      "degree": "Secondary School Certificate (SSC)",
+      "field": "",
+      "gpa": "4.72 out of 5.00",
+      "research": "No"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Chat Application (Super Chat)",
+      "description": "It's real time chat application, user can send sms and other user showing real time typing. user also send image or file. User also showing active option.",
+      "technologies": ["React.js", "Node.js", "Socket.io", "MongoDB"],
+      "image": "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=600&h=400&fit=crop"
+    },
+    {
+      "title": "Author's Gender Prediction",
+      "description": "Find out actual writer's gender using their Bangla text using NLP",
+      "technologies": ["Machine Learning", "Python", "NLP"],
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+    },
+    {
+      "title": "Notebook",
+      "description": "User can add their daily note.",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop"
+    },
+    {
+      "title": "EduMall",
+      "description": "Learning multiple Language. that means, users can learn multiple language here.",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop"
+    },
+    {
+      "title": "Movix",
+      "description": "This site is like Netflix. All latest movies here. Data fetching from: TMDB API",
+      "technologies": ["React", "Redux", "SCSS", "Node.js"],
+      "image": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&h=400&fit=crop"
+    }
+  ],
+  "contact": {
+    "title": "Get In Touch",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!"
+  }
+}
