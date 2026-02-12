@@ -1,0 +1,26 @@
+[
+  {
+    "period": "2019-2022",
+    "institution": "Stamford University Bangladesh",
+    "degree": "Bachelor of Science",
+    "field": "Computer Science and Engineering",
+    "gpa": "3.60 out of 4.00",
+    "research": "Author's Gender Prediction Based on Their Bangla Books (using NLP)"
+  },
+  {
+    "period": "2016-2018",
+    "institution": "Govt. Shahid Bulbul College, Pabna",
+    "degree": "Higher Secondary Certificate (HSC)",
+    "field": "",
+    "gpa": "3.69 out of 5.00",
+    "research": "No"
+  },
+  {
+    "period": "2011-2016",
+    "institution": "Nondonpur K.T.S. Ayesha Khatun High School, Santhia, Pabna",
+    "degree": "Secondary School Certificate (SSC)",
+    "field": "",
+    "gpa": "4.72 out of 5.00",
+    "research": "No"
+  }
+]

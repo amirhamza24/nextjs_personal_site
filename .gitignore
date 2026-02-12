@@ -37,8 +37,5 @@ yarn-error.log*
 .vercel
 
 # typescript
-*.tsbuildinfo
 
-# personal data
-/data/
-/public/
+# typescript

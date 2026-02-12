@@ -1,0 +1,16 @@
+{
+  "name": "Amir Hamza Ridoy",
+  "titles": [
+    "Software Engineer",
+    "Full Stack Developer",
+    "Frontend Developer",
+    "Software Development Engineer"
+  ],
+  "profileImage": "/profile_img.jpg",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/amir-hamza-447ba8278/",
+    "github": "https://github.com/amirhamza24",
+    "facebook": "http://facebook.com/amirhamza.ridoy/4",
+    "email": "ridoy.amirhamza@gmail.com"
+  }
+}
