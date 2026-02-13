@@ -5,27 +5,62 @@ import { useEffect, useState } from "react";
 
 export default function Header() {
   const { theme, toggleTheme } = useTheme();
+  const [activeSection, setActiveSection] = useState("");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
+
+    // Intersection Observer for active section highlighting
+    const observerOptions = {
+      root: null,
+      rootMargin: "-20% 0px -70% 0px", // Highlighting logic: when section occupies the top portion of the screen
+      threshold: 0,
+    };
+
+    const handleIntersect = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, observerOptions);
+
+    // Observe all sections
+    const sections = [
+      "hero",
+      "about",
+      "skills",
+      "experience",
+      "education",
+      "projects",
+      "contact",
+    ];
+    sections.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      observer.disconnect();
+    };
   }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      const headerOffset = 100;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
+      element.scrollIntoView({
         behavior: "smooth",
+        block: "start",
       });
+      // Optionally update active section immediately on click
+      setActiveSection(id);
     }
   };
 
@@ -46,10 +81,11 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <div
-          className="text-2xl font-bold font-mono text-primary cursor-pointer hover:tracking-widest transition-all duration-300"
+          className="text-2xl font-bold text-primary cursor-pointer tracking-wider hover:tracking-widest transition-all duration-300"
           onClick={() => scrollToSection("hero")}
+          style={{ fontFamily: "var(--font-fira), monospace" }}
         >
-          &lt;AMIR /&gt;
+          &lt;RIDOY /&gt;
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -57,10 +93,20 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="text-sm font-medium tracking-widest text-secondary hover:text-primary transition-colors duration-300 relative group cursor-pointer"
+              className={`text-sm font-medium tracking-widest transition-colors duration-300 relative group cursor-pointer ${
+                activeSection === link.id
+                  ? "text-primary"
+                  : "text-secondary hover:text-primary"
+              }`}
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              <span
+                className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
+                  activeSection === link.id
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
+                }`}
+              ></span>
             </button>
           ))}
         </nav>
@@ -68,7 +114,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <button
             onClick={toggleTheme}
-            className="p-2.5 rounded-full glass hover:border-primary/50 transition-all duration-300 group shadow-lg"
+            className="p-2.5 rounded-full glass hover:border-primary/50 transition-all duration-300 group shadow-lg cursor-pointer"
             aria-label="Toggle theme"
           >
             {theme === "dark" ? (

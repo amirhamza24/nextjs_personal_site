@@ -25,7 +25,12 @@ export default function Footer({ data }: FooterProps) {
         <div className="text-center space-y-2">
           <p className="text-secondary font-mono text-[10px] tracking-widest uppercase">
             Designed & Built by{" "}
-            <span className="text-primary">{data.name}</span>
+            <span
+              className="text-primary"
+              style={{ fontFamily: "var(--font-fira), monospace" }}
+            >
+              {data.name}
+            </span>
           </p>
           <p className="text-muted-foreground font-mono text-[9px] tracking-widest uppercase">
             Built with Next.js, TypeScript & Tailwind CSS

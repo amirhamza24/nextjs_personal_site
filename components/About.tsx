@@ -19,7 +19,10 @@ export default function About({ data }: AboutProps) {
         </div>
 
         <div className="grid md:grid-cols-[2fr_1fr] gap-12 items-start">
-          <div className="space-y-6 text-secondary text-lg leading-relaxed animate-fadeInUp">
+          <div
+            className="space-y-6 text-secondary font-light leading-relaxed animate-fadeInUp"
+            style={{ fontFamily: "var(--font-poppins)" }}
+          >
             <p>{data.description}</p>
             <p>
               Here are a few technologies I&apos;ve been working with recently:

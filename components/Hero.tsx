@@ -77,13 +77,16 @@ export default function Hero({ data }: HeroProps) {
               <p className="font-mono text-primary tracking-[0.3em] text-sm uppercase">
                 Hi, I am
               </p>
-              <h1 className="text-4xl md:text-5xl font-serif italic font-black text-foreground tracking-wide leading-tight">
+              <h1 className="text-4xl md:text-5xl font-serif italic font-black text-foreground tracking-wider leading-tight">
                 {data.name}
               </h1>
             </div>
 
             <div className="h-10 flex items-center justify-center">
-              <h2 className="text-xl md:text-3xl font-mono font-medium text-secondary">
+              <h2
+                className="text-xl md:text-2xl font-medium text-secondary"
+                style={{ fontFamily: "var(--font-fira), monospace" }}
+              >
                 <span className="text-primary tracking-tighter">&gt;</span>{" "}
                 {displayText}
                 <span className="animate-pulse ml-1 text-primary">|</span>
@@ -102,7 +105,7 @@ export default function Hero({ data }: HeroProps) {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-8 pt-4 animate-fadeInUp delay-300">
-            <button className="primary-btn relative overflow-hidden px-10 py-4 rounded-full border border-primary text-primary font-mono text-sm tracking-widest transition-all duration-300 hover:text-background group">
+            <button className="primary-btn relative overflow-hidden px-10 py-4 rounded-full border border-primary text-primary font-mono text-sm tracking-widest transition-all duration-300 hover:text-background group  cursor-pointer">
               <span className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
               <span className="relative z-10">Download Resume</span>
             </button>

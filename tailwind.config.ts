@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -36,6 +36,7 @@ export default {
       fontFamily: {
         sans: ["var(--font-poppins)", "sans-serif"],
         serif: ["var(--font-playfair)", "serif"],
+        mono: ["var(--font-fira)", "monospace"],
       },
       animation: {
         fadeInUp: "fadeInUp 0.6s ease-out forwards",

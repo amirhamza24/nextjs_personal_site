@@ -21,7 +21,10 @@ export default function Contact({ data, social }: ContactProps) {
           <p className="font-mono text-primary text-sm tracking-[0.2em] animate-fadeInUp">
             What&apos;s Next?
           </p>
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground animate-fadeInUp delay-100">
+          <h2
+            className="text-4xl md:text-5xl font-bold text-foreground animate-fadeInUp delay-100"
+            style={{ fontFamily: "var(--font-fira), monospace" }}
+          >
             {data.title}
           </h2>
         </div>
@@ -34,6 +37,7 @@ export default function Contact({ data, social }: ContactProps) {
           <a
             href={`mailto:${social.email}`}
             className="px-10 py-5 border border-primary text-primary font-mono text-sm tracking-[0.2em] rounded hover:bg-primary/10 transition-all duration-300 hover:-translate-y-1 block w-fit"
+            style={{ fontFamily: "var(--font-poppins)" }}
           >
             Say Hello
           </a>

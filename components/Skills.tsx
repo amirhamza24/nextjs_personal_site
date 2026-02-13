@@ -28,7 +28,10 @@ export default function Skills({ data }: SkillsProps) {
             <div
               key={skill.name}
               className="group p-5 rounded-xl border border-border/40 bg-card/30 hover:bg-card/60 hover:border-primary/30 transition-all duration-300"
-              style={{ transitionDelay: `${index * 50}ms` }}
+              style={{
+                transitionDelay: `${index * 50}ms`,
+                fontFamily: "var(--font-fira), monospace",
+              }}
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-3">
