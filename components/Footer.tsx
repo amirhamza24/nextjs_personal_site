@@ -36,7 +36,7 @@ export default function Footer({ data }: FooterProps) {
             Built with Next.js, TypeScript & Tailwind CSS
           </p>
           <p className="text-muted-foreground font-mono text-[9px] tracking-widest uppercase mt-4">
-            &copy; {new Date().getFullYear()} All Rights Reserved
+            &copy; {new Date().getFullYear()}; All Rights Reserved
           </p>
         </div>
       </div>

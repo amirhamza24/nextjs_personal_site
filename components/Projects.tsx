@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Icon } from "./Icons";
 
 interface Project {
   title: string;
@@ -76,37 +77,13 @@ export default function Projects({ data }: ProjectsProps) {
                       className="p-2 bg-muted/30 rounded-full text-secondary hover:text-primary hover:bg-primary/10 transition-all duration-300"
                       aria-label="Github link"
                     >
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                        />
-                      </svg>
+                      <Icon name="default" className="w-4 h-4" />
                     </a>
                   </div>
 
                   <button className="flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary border border-primary/20 hover:border-primary text-primary hover:text-background font-mono text-[11px] font-bold rounded transition-all duration-300 tracking-wide">
                     VIEW DETAILS
-                    <svg
-                      className="w-3 h-3"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
+                    <Icon name="arrow-right" className="w-3 h-3" />
                   </button>
                 </div>
               </div>
