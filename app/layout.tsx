@@ -25,7 +25,7 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Amir Hamza Ridoy | Software Development Engineer",
+  title: "Amir Hamza Ridoy | Software Engineer",
   description:
     "Portfolio of Amir Hamza Ridoy - Software Engineer, Full Stack Developer, and Software Development Engineer specializing in React, Next.js, and modern web technologies.",
   keywords: [
