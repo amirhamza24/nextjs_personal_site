@@ -99,6 +99,7 @@ export default function Header() {
                   ? "text-primary"
                   : "text-secondary hover:text-primary"
               }`}
+              style={{ fontFamily: "var(--font-poppins)" }}
             >
               {link.name}
               <span
