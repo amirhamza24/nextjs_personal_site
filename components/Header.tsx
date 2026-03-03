@@ -100,7 +100,7 @@ export default function Header() {
                   ? "text-primary"
                   : "text-secondary hover:text-primary"
               }`}
-              style={{ fontFamily: "var(--font-poppins)" }}
+              style={{ fontFamily: "var(--font-montserrat)" }}
             >
               {link.name}
 

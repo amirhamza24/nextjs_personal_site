@@ -46,7 +46,7 @@ export default function Experience({ data }: ExperienceProps) {
                 <p className="font-mono text-xs text-secondary uppercase tracking-widest">
                   {exp.period}
                 </p>
-                <ul className="space-y-3 pt-2">
+                <ul className=" pt-2">
                   <li className="flex gap-3 text-secondary leading-relaxed">
                     <span className="text-primary text-xs mt-1.5 tracking-tighter">
                       ▹

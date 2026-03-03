@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins, Playfair_Display, Fira_Code } from "next/font/google";
+import {
+  Poppins,
+  Playfair_Display,
+  Fira_Code,
+  Montserrat,
+} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -21,6 +26,13 @@ const firaCode = Fira_Code({
   weight: ["400", "500"],
   subsets: ["latin"],
   variable: "--font-fira",
+  display: "swap",
+});
+
+const montserrat = Montserrat({
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-montserrat",
   display: "swap",
 });
 
@@ -46,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${poppins.variable} ${playfair.variable} ${firaCode.variable} font-sans antialiased`}
+        className={`${poppins.variable} ${playfair.variable} ${firaCode.variable} ${montserrat.variable} font-sans antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>
