@@ -3,6 +3,7 @@
 import { useTheme } from "./ThemeProvider";
 import { useEffect, useState } from "react";
 import { Icon } from "./Icons";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const { theme, toggleTheme } = useTheme();
@@ -94,7 +95,7 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className={`text-sm font-medium tracking-widest transition-colors duration-300 relative group cursor-pointer ${
+              className={`text-sm font-medium tracking-widest transition-colors duration-300 relative group cursor-pointer flex flex-col items-center gap-1 ${
                 activeSection === link.id
                   ? "text-primary"
                   : "text-secondary hover:text-primary"
@@ -102,13 +103,22 @@ export default function Header() {
               style={{ fontFamily: "var(--font-poppins)" }}
             >
               {link.name}
-              <span
-                className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
-                  activeSection === link.id
-                    ? "w-full"
-                    : "w-0 group-hover:w-full"
-                }`}
-              ></span>
+
+              {/* Hover effect - subtle line */}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary/80 transition-all duration-300 group-hover:w-full"></span>
+
+              {/* Active effect - Smooth moving circle */}
+              {activeSection === link.id && (
+                <motion.div
+                  layoutId="activeSectionIndicator"
+                  className="w-1.5 h-1.5 rounded-full bg-primary absolute -bottom-2"
+                  transition={{
+                    type: "spring",
+                    stiffness: 380,
+                    damping: 30,
+                  }}
+                />
+              )}
             </button>
           ))}
         </nav>
