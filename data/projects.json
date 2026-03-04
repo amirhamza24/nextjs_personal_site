@@ -25,7 +25,7 @@
   },
   {
     "title": "Movix",
-    "description": "This site is like Netflix. All latest movies here. Data fetching from: TMDB API",
+    "description": "A dynamic movie streaming platform that offers a wide range of films, including the latest releases and popular titles. The application fetches movie data from the TMDB API, providing users with a seamless streaming experience.",
     "technologies": ["React", "Redux", "SCSS", "Node.js"],
     "image": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&h=400&fit=crop"
   }
