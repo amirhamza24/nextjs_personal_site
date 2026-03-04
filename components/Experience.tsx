@@ -30,8 +30,8 @@ export default function Experience({ data }: ExperienceProps) {
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               {/* Timeline marker */}
-              <div className="absolute left-0 top-2.75 w-2 h-2 rounded-full bg-primary" />
-              <div className="absolute left-0.75 top-6 bottom-0 w-0.5 bg-border h-[calc(100%+2.5rem)] last:h-0" />
+              <div className="absolute left-0 top-3 w-2 h-2 rounded-full bg-primary" />
+              <div className="absolute left-0.75 top-5 bottom-0 w-0.5 bg-border h-[calc(100%+2.5rem)] last:h-0" />
 
               <div className="space-y-2">
                 <div className="flex flex-wrap items-baseline gap-2">
@@ -46,7 +46,7 @@ export default function Experience({ data }: ExperienceProps) {
                 <p className="font-mono text-xs text-secondary uppercase tracking-widest">
                   {exp.period}
                 </p>
-                <ul className="space-y-3 pt-2">
+                <ul className=" pt-2">
                   <li className="flex gap-3 text-secondary leading-relaxed">
                     <span className="text-primary text-xs mt-1.5 tracking-tighter">
                       ▹

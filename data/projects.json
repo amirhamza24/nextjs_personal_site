@@ -1,25 +1,25 @@
 [
   {
     "title": "Chat Application (Super Chat)",
-    "description": "It's real time chat application, user can send sms and other user showing real time typing. user also send image or file. User also showing active option.",
+    "description": "This is a real-time chat application where users can send messages and see when other users are typing in real time. Users can also share images and files. The application shows users’ active status as well.",
     "technologies": ["React.js", "Node.js", "Socket.io", "MongoDB"],
     "image": "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=600&h=400&fit=crop"
   },
   {
     "title": "Author's Gender Prediction",
-    "description": "Find out actual writer's gender using their Bangla text using NLP",
+    "description": "Developed a Natural Language Processing (NLP) model to predict the writer’s gender based on Bangla text. The system analyzes linguistic patterns and textual features to classify the probable gender of the author.",
     "technologies": ["Machine Learning", "Python"],
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
   },
   {
     "title": "Notebook",
-    "description": "User can add their daily note.",
+    "description": "A simple and intuitive note-taking application that allows users to create, edit, and organize their daily notes. The platform provides a seamless interface for managing personal thoughts and reminders.",
     "technologies": ["React", "Node.js", "MongoDB"],
     "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop"
   },
   {
     "title": "EduMall",
-    "description": "Learning multiple Language. that means, users can learn multiple language here.",
+    "description": "An online learning platform designed to help users acquire new language skills through structured courses and interactive content. The platform supports multiple languages, making it a comprehensive hub for language learners.",
     "technologies": ["React", "Node.js", "MongoDB"],
     "image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop"
   },

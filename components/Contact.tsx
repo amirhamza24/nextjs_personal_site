@@ -37,7 +37,7 @@ export default function Contact({ data, social }: ContactProps) {
           <a
             href={`mailto:${social.email}`}
             className="px-10 py-5 border border-primary text-primary font-mono text-sm tracking-[0.2em] rounded hover:bg-primary/10 transition-all duration-300 hover:-translate-y-1 block w-fit"
-            style={{ fontFamily: "var(--font-poppins)" }}
+            style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Say Hello
           </a>

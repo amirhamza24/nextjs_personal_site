@@ -50,7 +50,11 @@ export default function Education({ data }: EducationProps) {
                   <span className="text-primary tracking-tighter text-[10px]">
                     ▹
                   </span>
-                  <span className="font-semibold text-foreground/80">GPA:</span>{" "}
+                  <span className="font-semibold text-foreground/80">
+                    {edu.degree.toLowerCase().includes("bachelor")
+                      ? "CGPA:"
+                      : "GPA:"}
+                  </span>{" "}
                   {edu.gpa}
                 </p>
                 {edu.research !== "No" && (

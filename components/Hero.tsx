@@ -77,14 +77,24 @@ export default function Hero({ data }: HeroProps) {
               <p className="font-mono text-primary tracking-[0.3em] text-sm uppercase">
                 Hi, I am
               </p>
-              <h1 className="text-4xl md:text-5xl font-serif italic font-black text-foreground tracking-wider leading-tight">
+              {/* <h1
+                className="text-4xl md:text-5xl italic font-black tracking-wider leading-tight"
+                style={{ fontFamily: "var(--font-montserrat)" }}
+              >
+                {data.name}
+              </h1> */}
+
+              <h1
+                className="text-4xl md:text-6xl font-light uppercase"
+                style={{ fontFamily: "var(--font-montserrat)" }}
+              >
                 {data.name}
               </h1>
             </div>
 
             <div className="h-10 flex items-center justify-center">
               <h2
-                className="text-xl md:text-2xl font-medium text-secondary"
+                className="text-xl md:text-2xl text-secondary"
                 style={{ fontFamily: "var(--font-fira), monospace" }}
               >
                 <span className="text-primary tracking-tighter">&gt;</span>{" "}
@@ -93,7 +103,10 @@ export default function Hero({ data }: HeroProps) {
               </h2>
             </div>
 
-            <p className="text-secondary text-lg md:text-xl leading-relaxed max-w-2xl mx-auto font-light">
+            <p
+              className="text-secondary text-sm md:text-lg leading-relaxed max-w-2xl mx-auto font-light"
+              style={{ fontFamily: "var(--font-montserrat)" }}
+            >
               A dedicated{" "}
               <span className="text-foreground font-medium underline decoration-primary/40 decoration-2 underline-offset-4">
                 Software Engineer
