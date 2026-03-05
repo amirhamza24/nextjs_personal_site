@@ -83,11 +83,14 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <div
-          className="text-2xl font-bold text-primary cursor-pointer tracking-wider hover:tracking-widest transition-all duration-300"
+          className="text-2xl text-primary cursor-pointer tracking-wider hover:tracking-widest transition-all duration-300 font-minecraft"
           onClick={() => scrollToSection("hero")}
-          style={{ fontFamily: "var(--font-fira), monospace" }}
         >
-          &lt;RIDOY /&gt;
+          &lt;
+          <span className="bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
+            RIDOY
+          </span>{" "}
+          /&gt;
         </div>
 
         <nav className="hidden md:flex items-center gap-8">

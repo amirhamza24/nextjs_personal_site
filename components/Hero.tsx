@@ -85,7 +85,7 @@ export default function Hero({ data }: HeroProps) {
               </h1> */}
 
               <h1
-                className="text-4xl md:text-6xl font-light uppercase"
+                className="text-4xl md:text-6xl font-light uppercase bg-linear-to-r from-primary to-accent bg-clip-text text-transparent"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 {data.name}
